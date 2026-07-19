@@ -25,8 +25,8 @@ public class Timetable {
             return new ArrayList<>();
         }
         List<TrainingSession> result = new ArrayList<>();
-        for (TimeOfDay timeOfDay : daySchedule.navigableKeySet()) {
-            result.addAll(daySchedule.get(timeOfDay));//как реализовать, тоже непонятно, но сложность должна быть О(1)
+        for (List<TrainingSession> sessions : daySchedule.values()) {
+            result.addAll(sessions);//как реализовать, тоже непонятно, но сложность должна быть О(1)
         }
         return result;
     }
