@@ -17,7 +17,7 @@ public class CounterOfTrainings implements Comparable<CounterOfTrainings> {
     public Coach getCoach() {
         return coach;
     }
-    
+
     public int getCount() {
         return count;
     }
